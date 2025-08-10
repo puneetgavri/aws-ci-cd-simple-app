@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+hooks:
+  ApplicationStop:
+    - location: aws-simple-python-app/stop_container.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: aws-simple-python-app/start_container.sh
+      timeout: 300
+      runas: root
