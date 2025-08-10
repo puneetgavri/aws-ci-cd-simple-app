@@ -27,7 +27,8 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: ..
+  base-directory: aws-simple-python-app
+
 
 
 
