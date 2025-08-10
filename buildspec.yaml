@@ -11,7 +11,7 @@ phases:
       python: 3.11
   pre_build:
     commands:
-      - echo "Installing dependencies..."
+      - echo "Installing dependencies to compile..."
       - pip install -r requirements.txt
   build:
     commands:
@@ -26,6 +26,7 @@ phases:
 artifacts:
   files:
     - '**/*'
+
 
 
 
